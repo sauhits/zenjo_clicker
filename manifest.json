@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+
+  "name": "gakujo_clicker",
+
+  "version": "1.0",
+
+  "description": "静岡大学のポータルサイトであるLiveCampusUの利用について，面倒なログインボタンとアクセス確認ボタンを自動で押下する拡張機能です．",
+
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png"
+    },
+    "default_title": "login_clicker"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://idp.shizuoka.ac.jp/idp/profile/SAML2/Redirect/SSO?execution=e1s3"
+      ],
+      "js": ["access_allow.js"]
+    },
+    {
+      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/"],
+      "js": ["login.js"]
+    }
+  ]
+}
