@@ -30,7 +30,7 @@
       "js": ["access_allow.js"]
     },
     {
-      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/"],
+      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/","https://gakujo.shizuoka.ac.jp/lcu-web/?form=*"],
       "js": ["login.js"]
     }
   ]
