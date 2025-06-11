@@ -37,7 +37,7 @@
       "js": ["login.js"]
     },
     {
-      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/SC_*"],
+      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/*"],
       "css": ["darkMode.css"]
     }
   ]

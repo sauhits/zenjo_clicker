@@ -9,7 +9,7 @@
 
 /* c-header */
 .c-header {
-    background-color: #0d1117 !important;
+    background-color: #010409 !important;
 }
 
 .c-header-campuslink {
@@ -135,8 +135,8 @@
 }
 
 .c-form-box .checkbox input:checked+span:after {
-    border-left-color: #3d444d !important;
-    border-bottom-color: #3d444d !important;
+    border-left-color: #238636 !important;
+    border-bottom-color: #238636 !important;
 }
 
 .c-form-box .input-file>span {
@@ -150,12 +150,12 @@
 }
 
 .c-search-accordion-contents {
-    background-color: #212830 !important;
+    background-color: #151b23 !important;
     border: 1px solid #3d444d !important;
 }
 
 /* c-status */
-.c-status-yet{
+.c-status-yet {
     color: #d4145c !important;
 }
 
@@ -170,6 +170,11 @@ tr {
 .c-table td {
     background-color: #0d1117 !important;
     border: 1px solid #3d444d !important;
+}
+
+.c-table-line th,
+.c-table-line td {
+    border-bottom: 1px solid #3d444d !important;
 }
 
 /* c-fixed */
@@ -200,6 +205,11 @@ tr {
     border: 2px solid #3d444d !important;
 }
 
+/* c-textarea */
+.c-textarea {
+    background-color: #0d1117 !important;
+    border: 1px solid #3d444d !important;
+}
 
 /* index-main */
 .index-main-visual-notice-box {
@@ -265,6 +275,10 @@ html .ui-button.ui-state-disabled:active {
     border-left: 3px solid #238636 !important;
 }
 
+.stady-sec01 .stady-sec01-box ul li:nth-child(1) dl {
+    border-bottom: 1px solid #3d444d !important;
+}
+
 .stady-sec01 .stady-sec01-box ul li:nth-child(2) .r-list2 p,
 .stady-sec02 .stady-sec02-contents .ttl-area .right ul .confirm {
     background: #238636 !important;
@@ -324,7 +338,7 @@ screen and (min-width: 561px) {
 }
 
 .dz-preview {
-    background-color: #0d1117 !important;
+    background-color: #238636 !important;
 }
 
 /* question-heading */
@@ -339,4 +353,22 @@ screen and (min-width: 561px) {
 
 .question-heading-container .status_box .text {
     background-color: #238636 !important;
+}
+
+.question-reference-data {
+    border-bottom: 2px solid #3d444d !important;
+}
+
+table {
+    border-color: #3d444d !important;
+}
+
+svg:not([fill]) {
+    fill: #238636 !important;
+}
+
+/* history */
+.histry-my-block {
+    background-color: #3d444d !important;
+    border: 1px solid #3d444d !important;
 }
