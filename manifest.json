@@ -30,8 +30,15 @@
       "js": ["access_allow.js"]
     },
     {
-      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/","https://gakujo.shizuoka.ac.jp/lcu-web/?form=*"],
+      "matches": [
+        "https://gakujo.shizuoka.ac.jp/lcu-web/",
+        "https://gakujo.shizuoka.ac.jp/lcu-web/?form=*"
+      ],
       "js": ["login.js"]
+    },
+    {
+      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/SC_*"],
+      "css": ["darkMode.css"]
     }
   ]
 }
