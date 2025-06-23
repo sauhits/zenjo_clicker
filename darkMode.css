@@ -1,4 +1,10 @@
 /* darkMode.css */
+
+body {
+    background-color: #010409 !important;
+}
+
+/* c-wrapper */
 .c-wrapper {
     background-color: #0d1117 !important;
 }
