@@ -19,9 +19,15 @@
       "16": "images/icon16.png",
       "32": "images/icon32.png"
     },
-    "default_title": "login_clicker"
+    "default_title": "zenjo_clicker"
   },
-
+  "permissions": ["activeTab", "scripting"],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/github_zenjo.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -39,6 +45,10 @@
     {
       "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/*"],
       "css": ["darkMode.css"]
+    },
+    {
+      "matches": ["https://gakujo.shizuoka.ac.jp/lcu-web/SC_01002B00_0*"],
+      "js": ["content.js"]
     }
   ]
 }
