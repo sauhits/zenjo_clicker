@@ -135,6 +135,10 @@ body {
     border: 1px solid #3d444d !important;
 }
 
+.c-form-box .checkbox input:disabled+span {
+    background-color: #238636 !important;
+}
+
 .c-form-box .checkbox span:before {
     background-color: #0d1117 !important;
     border: 1px solid #3d444d !important;
@@ -363,6 +367,10 @@ screen and (min-width: 561px) {
 
 .question-reference-data {
     border-bottom: 2px solid #3d444d !important;
+}
+
+.quiestion-summary dt {
+    background-color: #238636 !important;
 }
 
 table {
