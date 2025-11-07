@@ -24,7 +24,7 @@
   "permissions": ["activeTab", "scripting"],
   "web_accessible_resources": [
     {
-      "resources": ["images/github_zenjo.png"],
+      "resources": ["images/github_zenjo.png","test.html"],
       "matches": ["<all_urls>"]
     }
   ],

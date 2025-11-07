@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Blue Screen Replica</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0094ff;
+            /* Windows BSOD Blue */
+            color: white;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .face {
+            font-size: 100px;
+            line-height: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .text {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+
+        .progress {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+
+        .bottom {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .qr {
+            width: 100px;
+            height: 100px;
+            background: white;
+            display: inline-block;
+            background-image: repeating-linear-gradient(45deg,
+                    #0094ff 0 10px,
+                    #fff 10px 20px);
+        }
+
+        .info {
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        .stop {
+            display: block;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="face">:(</div>
+        <div class="text">
+            Your PC ran into a problem and needs to restart.<br>
+            We're just collecting some error info, and then we'll restart for you.
+        </div>
+        <div class="progress">9% complete</div>
+
+        <div class="bottom">
+            <div class="qr"></div>
+            <div class="info">
+                For more information about this issue and possible fixes, visit
+                <a href="https://www.windows.com/stopcode">https://www.windows.com/stopcode</a><br><br>
+                If you call a support person, give them this info:<br>
+                <span class="stop">Stop code: CRITICAL_PROCESS_DIED</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
