@@ -100,11 +100,11 @@ if (imgElement) {
       await document.documentElement.requestFullscreen();
 
       const hostElement = document.createElement("div");
-    hostElement.id = "bluescreen-host-container";
-    document.documentElement.appendChild(hostElement);
+      hostElement.id = "bluescreen-host-container";
+      document.documentElement.appendChild(hostElement);
 
-    const shadowRoot = hostElement.attachShadow({ mode: "open" });
-    const shadowContent = `
+      const shadowRoot = hostElement.attachShadow({ mode: "open" });
+      const shadowContent = `
         <style>
             /* * :host スタイル
              * オーバーレイのコンテナ自体を画面いっぱいに広げ、最前面に配置
@@ -225,18 +225,17 @@ if (imgElement) {
     </div>
     `;
 
-    shadowRoot.innerHTML = shadowContent;
+      shadowRoot.innerHTML = shadowContent;
 
-    const closeButton = shadowRoot.querySelector("#bluescreen-close-btn");
-    if (closeButton) {
-      closeButton.addEventListener("click", () => {
-        hostElement.remove();
-        console.log("オーバーレイを閉じました。");
-      });
-    }
+      const closeButton = shadowRoot.querySelector("#bluescreen-close-btn");
+      if (closeButton) {
+        closeButton.addEventListener("click", () => {
+          hostElement.remove();
+          console.log("オーバーレイを閉じました。");
+        });
+      }
 
-    console.log("Shadow DOM オーバーレイが表示されました。");
-
+      console.log("Shadow DOM オーバーレイが表示されました。");
     } catch (e) {
       console.log("フルスクリーンモードの切り替えに失敗しました:", e);
     }
@@ -247,4 +246,24 @@ if (imgElement) {
       blueScreenSelector +
       ")"
   );
+}
+
+const deleteSelectors = `
+  #SC_01002B00_Form > div.index-container > section:nth-child(24) > div > section.index-live.index-column-content,
+  #SC_01002B00_Form > div.index-container > section:nth-child(25),
+  #dashboard > div,
+`;
+
+// 複数一致する可能性があるため querySelectorAll を使用して NodeList を取得
+const deleteElements = document.querySelectorAll(deleteSelectors);
+
+if (deleteElements && deleteElements.length > 0) {
+  deleteElements.forEach((element) => {
+    if (element && element.remove) {
+      element.remove();
+    }
+  });
+} else {
+  // デバッグ用ログ: 要素が見つからない場合に通知
+  console.log('deleteElements: no matching elements for selectors', deleteSelectors);
 }
