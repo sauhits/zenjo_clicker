@@ -240,8 +240,19 @@ tr {
     background-color: #238636 !important;
 }
 
+.index-submission .noData_box {
+    background-color: #151b23 !important;
+    border: 1px solid #3d444d !important;
+}
+
 .index-notice-other-link .content .count .num {
     color: #d4145c !important;
+}
+
+/* index-schedule */
+.index-schedule .scheduleList_item {
+    background-color: #151b23 !important;
+    border: #3d444d 1px solid !important;
 }
 
 /* ui */
@@ -309,6 +320,10 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .stady-lecture-list-item-nodata {
+    background: #0d1117 !important;
+}
+
+.stady-lecture-list-item.confirm {
     background: #0d1117 !important;
 }
 
